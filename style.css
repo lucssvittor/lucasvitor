@@ -314,7 +314,6 @@ body {
     .header {
         position: relative;
         background-image: url('/img/eu.png');
-        background-size: cover;
         height: 100vh;
     }
     .header h1 {
@@ -351,7 +350,7 @@ body {
     .modal-content {
         width: 100%;
         padding: 5px;
-        padding-top: 90px;
+        padding-top: 50px;
     }
 
     .modal-content h1 {
@@ -363,7 +362,7 @@ body {
     .close {
         font-size: 50px;
         top: 5px;
-        right: 30px;
+        right: 15px;
     }
 
     .project-buttons {
