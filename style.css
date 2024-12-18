@@ -309,15 +309,15 @@ body {
 
 
 /* Responsividade */
-
-@media (max-width: 480px) {
-    .header {
+       
+@media (max-width: 768px) {
+        .header {
         position: relative;
         background-image: url('/img/eu.png');
         background-size: cover;
+        background-position: center top;
         height: 100vh;
-        
-@media (max-width: 768px) {
+        }
     .header h1 {
         font-size: 2.5rem;
     }
