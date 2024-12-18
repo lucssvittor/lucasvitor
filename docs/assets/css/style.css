@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-image: url('/img/eu.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+/* Home */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: #ffffff;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+.home-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: normal;
+    line-height: 1.5;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+/* Título das seções */
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
+}
+
+.section-title span {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+
+/* Sobre mim */
+
+.about-me {
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d0d0d0;
+    padding: 30px;
+    border-left: 5px solid #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-text:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Estilo da lista de habilidades */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+/* Habilidades  */
+
+.skill {
+    background: linear-gradient(145deg, #ffffff, #26518f);
+    padding: 20px;
+    border-radius: 12px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 3);
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* Projetos  */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover img {
+    opacity: 0.9;
+}
+
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.295);
+    z-index: 1000;
+    overflow: auto;
+    backdrop-filter: blur(20px);
+}
+
+.modal-content {
+    color: #000000;
+    margin: 15% auto;
+    padding: 25px;
+    width: 60%;
+    margin-top: 15px;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+    position: relative;
+    text-align: center;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.modal-content video {
+    margin-top: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #992323;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+
+
+.project-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.project-buttons a {
+    padding: 10px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: background-color 0.8s;
+    background-color: #ffffff;
+}
+
+.project-buttons a img {
+    width: 54px;
+    height: 54px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+
+/* Contato */
+
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contact-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-item {
+    text-align: center;
+    flex: 1 1 150px;
+    max-width: 200px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+}
+
+.contact-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+.contact-item p {
+    font-size: 1em;
+    color: #b3b3b3;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+        background-image: url('/img/eu.png');
+        background-size: cover;
+        height: 100vh;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    .header-text {
+        font-size: 2rem;
+        white-space: normal;
+        line-height: 1.4;
+    }
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .skills-list {
+        gap: 20px;
+    }
+
+    .skill {
+        width: 100px;
+    }
+    .portfolio {
+        gap: 25px;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    h2.section-title {
+        font-size: 2rem;
+    }
+    .modal-content {
+        width: 100%;
+        padding: 5px;
+        padding-top: 90px;
+    }
+
+    .modal-content h1 {
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .close {
+        font-size: 50px;
+        top: 5px;
+        right: 30px;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icon {
+        align-items: center;
+    }
+
+    .project-buttons a {
+        font-size: 20px;
+        padding: 10px;
+        width: 100%;
+        padding: 10px 30px;
+        border-radius: 15px;
+        text-decoration: none;
+        color: #1a1a1a;
+        transition: background-color 0.8s;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .project-buttons a img {
+        width: 25px;
+        height: 25px;
+    }
+    .contact-title {
+        font-size: 1.8em;
+    }
+
+    .contact-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-item {
+        max-width: 100%;
+    }
+
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-item h3 {
+        font-size: 1em;
+    }
+
+    .contact-item p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* Animações */
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeInIcon {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Estilo da animação */
+
+.reveal {
+    opacity: 0;
+    transform-origin: center;
+    transform: translateZ(-100px) scale(0.6) rotateX(30deg); 
+    transition: opacity 1.2s ease-out, 
+                transform 1.2s ease-out;
+    will-change: opacity, transform; 
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateZ(0) scale(1) rotateX(0);
+}
+
+.reveal.leave {
+    opacity: 0;
+    transform: translateZ(100px) scale(0.6) rotateX(-15deg);
+    transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+}

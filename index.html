@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Lucas Vitor</title>
+    <link rel="icon" href="/img/icon/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+        <header class="home">
+            <div class="intro-text">
+                <h2 class="home-text" id="typing-text">OLÁ!! MEU NOME É LUCAS VITOR :)</h2>
+            </div>
+        </header>
+    <main>
+
+<!-- Seção Sobre Mim -->
+<section class="content about-me reveal">
+    <h1 class="section-title">SOBRE <span>MIM</span></h1>
+        <div class="about-me-content">
+        <div class="about-text">
+            <p>Tenho 21 anos e sou formado em Análise e Desenvolvimento de Sistemas pela Unifacid. Sou apaixonado por tecnologia e constantemente busco desafios e oportunidades para aplicar meus conhecimentos e evoluir tanto profissionalmente quanto pessoalmente.</p>
+            <br>
+            <p>Ao longo de minha jornada, venho aprimorando minhas habilidades técnicas e explorando novas abordagens para resolver problemas desafiadores. Essas vivências têm estimulado minha paixão pela inovação e meu compromisso em entregar resultados de qualidade, sempre em busca de soluções eficientes e criativas.</p>
+            <br>
+            <p>Como São Francisco de Assis disse: "Comece fazendo o que é necessário, depois o que é possível, e de repente você estará fazendo o impossível." Acredito que essa sabedoria se aplica tanto ao meu trabalho quanto à minha missão de evangelizar e impactar vidas com gestos de bondade e compaixão.</p>
+            <br>
+            <p>Que Deus te abençoe!</p>
+            <br>
+            <section class="content skills reveal">
+                <h2 class="section-title"><span>HABILIDADES</span></h2>
+                <br>
+                <div class="skills-list">
+                    <div class="skill">
+                        <img src="/img/icon/c.png" alt="C++" class="skill-icon">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill">
+                        <img src="/img/icon/python.png" alt="Python" class="skill-icon">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <img src="/img/icon/postgre.png" alt="PostgreSQL" class="skill-icon">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill">
+                        <img src="/img/icon/ts.png" alt="Type Script" class="skill-icon">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill">
+                        <img src="/img/icon/java.png" alt="Java" class="skill-icon">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill">
+                        <img src="/img/icon/js.png" alt="Js" class="skill-icon">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill">
+                        <img src="/img/icon/css.png" alt="CSS3" class="skill-icon">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 40%;"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill">
+                        <img src="/img/icon/html.png" alt="HTML" class="skill-icon">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 40%;"></div>
+                        </div>
+                    </div>     
+            
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+
+<!-- Seção de Projetos -->
+
+<section class="content portfolio reveal">
+<h2 class="section-title"><span>PROJETOS</span></h2>
+<div class="portfolio">
+    
+    <div class="project" onclick="showDetails('SISTEMA DE ESTOQUE')">
+        <img src="/img/sistema.jpg" alt="SISTEMA DE ESTOQUE" class="project-image" />
+      </div>
+    <div class="project" onclick="showDetails('CALCULADORA')">
+      <img src="/img/calculadora.jpg" alt="CALCULADORA" class="project-image" />
+    </div>
+      <div class="project" onclick="showDetails('CONECTADOS PELA FÉ')">
+        <img src="/img/conectados.jpg" alt="CONECTADOS PELA FÉ" class="project-image" />
+      </div>
+      <div class="project" onclick="showDetails('CONFISSÃO')">
+        <img src="/img/confissao.jpg" alt="CONFISSÃO" class="project-image" />
+      </div>
+        <div class="project" onclick="showDetails('MURAL')">
+        <img src="/img/mural.jpg" alt="MURAL" class="project-image" />
+      </div>
+      <div class="project" onclick="showDetails('GERENCIADOR DE TAREFAS')">
+        <img src="/img/tarefas.jpg" alt="TAREFAS" class="project-image" />
+      </div>
+  </div>
+</section>
+  
+  
+  <!-- Modal para detalhes do projeto -->
+  <div id="projectDetails" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeDetails()">&times;</span>
+      <div id="projectContent"></div>
+    </div>
+  </div>
+  
+
+
+
+<!-- Seção Contato -->
+<section class="contact-section reveal">
+    <h2 class="section-title"><span>CONTATOS</span></h2>
+    <div class="contact-items">
+        <div class="contact-item">
+            <img src="/img/icon/gmail.png" alt="Ícone E-mail" class="contact-icon">
+            <h3>E-mail</h3>
+            <p>dev.lucssvitor@gmail.com</p>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.instagram.com/lucss.vittor/"><img src="/img/icon/instagram.png" alt="Ícone E-mail" class="contact-icon"></a>
+            <h3>Instagram</h3>
+            <p>@lucss.vittor</p></a>
+        </div>
+        <div class="contact-item">
+            <img src="/img/icon/whatsapp.png" alt="Ícone Telefone" class="contact-icon">
+            <h3>Telefone</h3>
+            <p>(86) 995186495</p>
+        </div>
+        
+        <div class="contact-item">
+            <a href="https://github.com/lucssvittor"><img src="/img/icon/git.png" alt="Ícone Github" class="contact-icon"></a>
+            <h3>GitHub</h3>
+            <p>@lucssvittor</p>
+        </div>
+    </div>
+</section>
+    </main>
+</body>
+</html>
