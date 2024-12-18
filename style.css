@@ -312,10 +312,7 @@ body {
        
 @media (max-width: 768px) {
         .header {
-        position: relative;
-        background-image: url('/img/eu.png');
-        background-size: cover;
-        background-position: center top;
+        background-image: url('/img/mobile.png');
         height: 100vh;
         }
     .header h1 {
