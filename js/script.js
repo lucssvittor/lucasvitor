@@ -92,6 +92,13 @@ const projectDetails = {
         git: "https://github.com/projeto1"
 
       },
+    "CONCESSIONÁRIA":{
+        description: "Estou desenvolvendo um sistema em Java/Swing para gerenciar carros. Está em fase beta e logo será concluído!  ",
+        icons: ["/img/icon/java.png" ],
+        video: "/videos/concessionaria.mp4",
+        git: "https://github.com/lucssvittor/Concessionaria/tree/main"
+
+      },
 };
 
 // Função para exibir os detalhes do projeto
