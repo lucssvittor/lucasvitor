@@ -76,7 +76,7 @@ const projectDetails = {
       description: "Essa aplicação, permitindo registrar, atualizar, visualizar e remover pecados. Ele usa PySimpleGUI para interface gráfica e armazena dados de usuários e pecados em arquivos JSON, com autenticação de usuários e controle de dados dos pecados.",
       icons:["/img/icon/python.png"],
       video: "videos/confissao.mp4",
-      site: "https://fast-food-orpin-two.vercel.app/index.html"
+      git: "https://github.com/lucssvittor/Gerenciador",
     },
     "SISTEMA DE ESTOQUE": {
         description: "Sistema basico de estoque que permite adicionar, buscar e exibir produtos, além de gerar relatórios e salvar/recuperar dados em arquivos de texto. Inclui funcionalidades como controle de validade, fornecedor, custo, preço de venda, descontos e categorias..",
@@ -113,10 +113,10 @@ function showDetails(projectId) {
         </video>
             <div class="project-buttons">
             <a href="${project.git}" target="_blank" class="git-button">
-            <img src="/img/icon/git.png" alt="Ícone GitHub" class="contact-icon"> 
+            REPOSITORIO<img src="/img/icon/git.png" alt="Ícone GitHub" class="contact-icon"> 
             </a>
             <a href="${project.site}" target="_blank" class="site-button">
-            <img src="/img/icon/site.png" alt="Ícone Site" class="contact-icon">
+           TESTAR <img src="/img/icon/site.png" alt="Ícone Site" class="contact-icon">
             </a>
         </div>
     `;
