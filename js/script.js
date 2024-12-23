@@ -118,10 +118,10 @@ function showDetails(projectId) {
             <p>${project.description}</p>
             <div class="project-buttons">
             <a href="${project.git}" target="_blank" class="git-button">
-            REPOSITORIO<img src="/img/icon/git.png" alt="Ícone GitHub" class="contact-icon"> 
+            <img src="/img/icon/git.png" alt="Ícone GitHub" class="contact-icon"> 
             </a>
             <a href="${project.site}" target="_blank" class="site-button">
-           TESTAR <img src="/img/icon/site.png" alt="Ícone Site" class="contact-icon">
+           <img src="/img/icon/site.png" alt="Ícone Site" class="contact-icon">
             </a>
         </div>
     `;
