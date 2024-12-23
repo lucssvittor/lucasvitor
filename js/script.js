@@ -109,15 +109,13 @@ function showDetails(projectId) {
 
     content.innerHTML = `
         <h1>${projectId}</h1>
-        <p>${project.description}</p>
          <div class="icons">${project.icons.map(icon => `<img src="${icon}" alt="Ícone" class="icon" />`).join("")}</div>
 
         <video controls width="100%">
             <source src="${project.video}" type="video/mp4">
-            <source src="${project.video.replace('.mp4', '.webm')}" type="video/webm">
-            <source src="${project.video.replace('.mp4', '.ogg')}" type="video/ogg">
             Seu navegador não suporta a tag de vídeo.
         </video>
+            <p>${project.description}</p>
             <div class="project-buttons">
             <a href="${project.git}" target="_blank" class="git-button">
             REPOSITORIO<img src="/img/icon/git.png" alt="Ícone GitHub" class="contact-icon"> 
